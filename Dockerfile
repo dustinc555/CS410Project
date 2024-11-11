@@ -3,8 +3,7 @@ FROM jupyter/base-notebook
 ENV PYTHONDONTWRITEBYTECODE=true
 EXPOSE 8888
 
-# Install packages in smaller groups for better dependency resolution with Conda
-RUN pip install pandas tqdm scikit-learn
+RUN pip install pandas tqdm scikit-learn langdetect
 RUN pip install ipywidgets kaggle
 RUN pip install matplotlib nltk
 RUN pip install networkx
