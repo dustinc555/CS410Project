@@ -11,4 +11,5 @@ RUN pip install networkx
 RUN echo 'alias_magic clingo script -p "clingo --no-raise-error"' \
     >> `ipython locate profile`/startup/config.ipy
 
-CMD ["jupyter", "notebook", "--no-browser", "--ip=0.0.0.0"]
+CMD ["jupyter", "notebook", "--no-browser", "--ip=0.0.0.0", "--port=8888", "--allow-root", \
+     "--NotebookApp.allow_origin='*'", "--NotebookApp.token=''"]
