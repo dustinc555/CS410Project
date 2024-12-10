@@ -1,0 +1,3 @@
+digraph G {
+    "1_fetch_data" -> "2_trim_data" -> "3_data_cleaning" -> "4_topic_mining" -> "5_graph_models" -> "6_prediction_custom_unigram_models";
+}
